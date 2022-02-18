@@ -1,0 +1,25 @@
+{
+	"dest":".",
+	"mgit-excluded":false,
+	"remote":"https://github.com/jingqingqingxinye",
+	"repositories":{
+		"MultiRepo":{
+			"abs-dest":".",
+			"remote":"https://github.com/jingqingqingxinye",
+			"mgit-excluded":false,
+			"remote-path":"MultiRepo"
+		},
+		"commonui":{
+			"abs-dest":"libraries/commonui",
+			"remote":"https://github.com/jingqingqingxinye",
+			"mgit-excluded":false,
+			"remote-path":"commonui"
+		},
+		"stockmodule":{
+			"abs-dest":"libraries/stockmodule",
+			"mgit-excluded":false,
+			"remote-path":"stockmodule"
+		}
+	},
+	"version":1
+}
