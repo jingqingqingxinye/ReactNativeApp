@@ -1,11 +1,10 @@
 package com.example.testapp
 
+import com.example.testapp.Text.MyTextManager
 import com.facebook.react.ReactPackage
-import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.NativeModule
-import com.example.testapp.MyNativeModule
+import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
-import java.util.ArrayList
 
 /**
  * @author jingqingqing
@@ -20,7 +19,8 @@ class MyReactPackage : ReactPackage {
     }
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
-        //返回值需要修改
-        return emptyList()
+        val modules: MutableList<ViewManager<*, *>> = ArrayList()
+        modules.add(MyTextManager(reactContext))
+        return modules
     }
 }
